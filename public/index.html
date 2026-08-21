@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Швейное предприятие «Крой» — пошив одежды и текстиля на заказ</title>
+  <meta name="description" content="Индивидуальный пошив одежды, ремонт, пошив штор и спецодежды. Оставьте заявку — рассчитаем стоимость и сроки." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Швейное предприятие<span>Крой</span></a>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#about">Почему мы</a>
+        <a href="#steps">Как работаем</a>
+        <a href="#form">Оставить заявку</a>
+      </nav>
+      <a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__badge">Собственное производство · Работаем с 2010 года</p>
+        <h1>Шьём одежду и текстиль на заказ — с учётом ваших мерок и сроков</h1>
+        <p class="hero__sub">
+          Индивидуальный пошив, ремонт и производство партий для бизнеса.
+          Контроль качества каждого шва и честные сроки — заранее.
+        </p>
+        <div class="hero__actions">
+          <a href="#form" class="btn btn--primary">Оставить заявку</a>
+          <a href="#services" class="btn btn--ghost">Смотреть услуги</a>
+        </div>
+        <ul class="hero__points">
+          <li>Примерка и корректировка лекал по фигуре</li>
+          <li>Смета и сроки до начала работ</li>
+          <li>Партии для бизнеса от 10 штук</li>
+        </ul>
+      </div>
+      <div class="hero__card">
+        <div class="hero__card-title">Скидка 10% на первый заказ</div>
+        <p>Оставьте заявку — подберём ткань, рассчитаем стоимость и предложим удобные сроки.</p>
+        <a href="#form" class="btn btn--primary btn--block">Получить расчёт</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Услуги и цены</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Индивидуальный пошив</h3>
+          <p>Одежда по вашим меркам: от платья и костюма до верхней одежды.</p>
+          <div class="card__price">от 2 500 ₽</div>
+        </div>
+        <div class="card">
+          <h3>Ремонт и перешив</h3>
+          <p>Укорачивание, замена молний, реставрация любимых вещей.</p>
+          <div class="card__price">от 400 ₽</div>
+        </div>
+        <div class="card">
+          <h3>Шторы и текстиль</h3>
+          <p>Пошив штор, покрывал, постельного белья и текстиля для дома.</p>
+          <div class="card__price">от 1 500 ₽</div>
+        </div>
+        <div class="card">
+          <h3>Спецодежда и униформа</h3>
+          <p>Производство партий для бизнеса: форма, спецодежда, брендинг.</p>
+          <div class="card__price">от 10 шт.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают «Крой»</h2>
+      <div class="about__grid">
+        <div class="about__item"><strong>14 лет</strong> опыта и 40 000+ изделий</div>
+        <div class="about__item"><strong>Свои лекала</strong> под индивидуальные мерки</div>
+        <div class="about__item"><strong>Контроль качества</strong> каждого шва</div>
+        <div class="about__item"><strong>Честные сроки</strong> и смета до начала работ</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps" class="steps">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+      <div class="steps__row">
+        <div class="step">
+          <div class="step__num">1</div>
+          <p>Оставляете заявку или звоните</p>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <p>Обсуждаем задачу, ткань и примерные сроки</p>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <p>Снимаем мерки и согласуем смету</p>
+        </div>
+        <div class="step">
+          <div class="step__num">4</div>
+          <p>Готовим изделие, примерка и выдача</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form" class="form-section">
+    <div class="container form__inner">
+      <div class="form__text">
+        <h2>Оставьте заявку — перезвоним в течение 10 минут</h2>
+        <p>Проконсультируем, рассчитаем стоимость и подберём удобное время для примерки.</p>
+      </div>
+      <form class="form" id="leadForm">
+        <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required />
+        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required />
+        <select name="service">
+          <option value="">Выберите услугу</option>
+          <option>Индивидуальный пошив</option>
+          <option>Ремонт и перешив</option>
+          <option>Шторы и текстиль</option>
+          <option>Спецодежда и униформа</option>
+          <option>Другое</option>
+        </select>
+        <textarea name="comment" rows="3" placeholder="Комментарий (что шьём, количество, сроки)"></textarea>
+        <button type="submit" class="btn btn--primary btn--block">Отправить заявку</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo">Швейное предприятие<span>Крой</span></div>
+      <p>г. Иваново, ул. Ткацкая, 15 · ежедневно 9:00–19:00</p>
+      <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
